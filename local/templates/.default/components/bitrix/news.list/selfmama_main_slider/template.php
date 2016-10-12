@@ -1,0 +1,38 @@
+<?
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+    die();
+/** @var array $arParams */
+/** @var array $arResult */
+/** @global CMain $APPLICATION */
+/** @global CUser $USER */
+/** @global CDatabase $DB */
+/** @var CBitrixComponentTemplate $this */
+/** @var string $templateName */
+/** @var string $templateFile */
+/** @var string $templateFolder */
+/** @var string $componentPath */
+/** @var CBitrixComponent $component */
+$this->setFrameMode(true);
+//echo '<pre>';
+//print_r($arResult);
+//echo '</pre>';
+?>
+<? if (!empty($arResult['ITEMS'])) { ?>
+    <div class="slider2">
+        <div class="inner">
+            <ul>
+            <? foreach ($arResult['ITEMS'] as $arItem) { ?>
+                <?
+                $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
+                $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+                ?>
+                <li id="<?= $this->GetEditAreaId($arItem['ID']); ?>" style="background-image: url('<?=$arItem['DETAIL_PICTURE']['SRC']?>');">
+                    <?=$arItem['CONTENT']?>
+                </li>
+            <? } ?>
+            </ul>
+        </div>
+        <div class="pagination"></div>
+    </div>
+    <?
+}?>

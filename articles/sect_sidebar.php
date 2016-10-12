@@ -9,7 +9,7 @@ $APPLICATION->IncludeComponent("bitrix:news.list", "selfmama_events_sidebar",
         "IBLOCK_TYPE" => "actions", // Тип информационного блока (используется только для проверки)
         "IBLOCK_ID" => "14", // Код информационного блока
         "NEWS_COUNT" => "1", // Количество новостей на странице
-        "SORT_BY1" => "PROPERTY_START_DATE", // Поле для первой сортировки новостей
+        "SORT_BY1" => "PROPERTY_START_DATETIME", // Поле для первой сортировки новостей
         "SORT_ORDER1" => "ASC", // Направление для первой сортировки новостей
         "SORT_BY2" => "SORT", // Поле для второй сортировки новостей
         "SORT_ORDER2" => "ASC", // Направление для второй сортировки новостей

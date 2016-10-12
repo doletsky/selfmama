@@ -1,0 +1,1 @@
+<?$APPLICATION->AddViewContent('header_image', $image);?>

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'gillsans';
+    src: url('../fonts/gillsansc-webfont.eot');
+    src: url('../fonts/gillsansc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansc-webfont.woff2') format('woff2'),
+         url('../fonts/gillsansc-webfont.woff') format('woff'),
+         url('../fonts/gillsansc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gillsans';
+    src: url('../fonts/gillsansc-bold-webfont.eot');
+    src: url('../fonts/gillsansc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansc-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gillsansc-bold-webfont.woff') format('woff'),
+         url('../fonts/gillsansc-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gillsans';
+    src: url('../fonts/gillsansc-bolditalic-webfont.eot');
+    src: url('../fonts/gillsansc-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansc-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/gillsansc-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/gillsansc-bolditalic-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gillsans';
+    src: url('../fonts/gillsansc-italic-webfont.eot');
+    src: url('../fonts/gillsansc-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansc-italic-webfont.woff2') format('woff2'),
+         url('../fonts/gillsansc-italic-webfont.woff') format('woff'),
+         url('../fonts/gillsansc-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gillsans';
+    src: url('../fonts/gillsanslightc-webfont.eot');
+    src: url('../fonts/gillsanslightc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsanslightc-webfont.woff2') format('woff2'),
+         url('../fonts/gillsanslightc-webfont.woff') format('woff'),
+         url('../fonts/gillsanslightc-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}

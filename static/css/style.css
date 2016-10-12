@@ -546,7 +546,7 @@ h3, h3 a {
 
 .article p {
     line-height: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .article .ins div:not([class="name"]){
     font-size: 14px;
@@ -1378,7 +1378,7 @@ a.w-btn {
 }
 
 .txt p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 21px;
     margin-bottom: 20px;
 }

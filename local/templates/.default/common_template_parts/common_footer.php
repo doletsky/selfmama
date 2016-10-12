@@ -56,7 +56,7 @@ $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
             <div class="copy fll">© 2016 Селфмама</div>
 
             <div class="made flr">
-                Сделано в <a href="#">Digital Мастерская</a>
+                Сделано в <a href="http://www.digitalmust.ru/">Digital Мастерская</a>
             </div>
         </div>
     </div>

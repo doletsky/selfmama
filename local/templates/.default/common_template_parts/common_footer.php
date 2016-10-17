@@ -111,5 +111,10 @@ if ($APPLICATION->GetPageProperty('HEADER_CLASS') == 'inner-page') {
         <button onclick="$.fancybox('#thanks',{padding: 0, margin: 40});" class="btn" type="submit">Отправить сообщение</button>*/?>
     </div>
 </div>
+    <div id="reg-me" class="popup">
+        <div class="form" id="regform">
+            <?$APPLICATION->IncludeFile("/include/regform.php", array('url' => $APPLICATION->GetCurPage()));?>
+        </div>
+    </div>
 </body>
 </html>

@@ -47,7 +47,11 @@ global $APPLICATION;
                             <div class="subscribers fll"><?=$arItem['COMMENTS']?></div>
                         </div>
 
-                        <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="btn">
+                        <?if(substr_count($arItem['DETAIL_PAGE_URL'], '#reg-me')>0):?>
+                        <a href="#reg-me" class="btn fancy">
+                        <?else:?>
+                            <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="btn">
+                        <?endif?>
                             <?=GetMessage('REGISTER_MESSAGE')?>
                         </a>
 

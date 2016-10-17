@@ -36,7 +36,7 @@ foreach ($arResult['ITEMS'] as &$arEventItem) {
         $arEventItem['DETAIL_PAGE_URL'] = $arEventItem['DISPLAY_PROPERTIES']['REMOTE_LINK']['VALUE'];
         $arEventItem['TARGET'] = "target=\"_blank\"";
     } else {
-        $arEventItem['DETAIL_PAGE_URL'] = "/programs/".date("Y", $start_time)."/".$arEventItem['CODE']."/";
+        $arEventItem['DETAIL_PAGE_URL'] = "/programs/".date("Y", $start_time)."/".$arEventItem['CODE']."/"."#reg-me";
     }
     
 

@@ -74,7 +74,7 @@ if (Phery::is_ajax() && $_REQUEST['phery']['remote'] == 'more') {
                     $html = ob_get_clean();
                     $response = PheryResponse::factory("#articles");
 //                    $response = $response->jquery("#pagination_".$ajax_data['pagen']."_".$ajax_data['page'])->remove();
-                    return $response->jquery("#pagination_".$ajax_data['pagen']."_".$ajax_data['page'])->remove()->jquery('#articles')->append($html)->jquery("#pagination_".$ajax_data['pagen']."_".($ajax_data['page']+1))->insertAfter('#articles');
+                    return $response->jquery("#pagination_".$ajax_data['pagen']."_".$ajax_data['page'])->remove()->jquery('#articles')->append($html)->jquery("#pagination_".$ajax_data['pagen']."_".($ajax_data['page']+1))->insertAfter('#articles')->jquery('.article')->addClass('block');
                 }
 
             }

@@ -483,6 +483,13 @@
         display: block !important;
     }
 
+    .center .left-part .article.fll.block {
+        display: block !important;
+    }
+    .center .left-part .article.flr.block {
+        display: block !important;
+    }
+
     .gallery li a {
         width: 50%;
     }

@@ -479,7 +479,7 @@
         display: none;
     }
 
-    .center .left-part .article:nth-of-type(2){
+    .center .left-part .article:nth-of-type(1){
         display: block !important;
     }
 
@@ -488,6 +488,17 @@
     }
     .center .left-part .article.flr.block {
         display: block !important;
+    }
+    #f_article.article.big{
+        height: 314px;
+    }
+    #f_article.article.big .name {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 22px;
+        margin-bottom: 20px;
     }
 
     .gallery li a {

@@ -195,7 +195,7 @@
     }
 
     .comand .member:nth-child(2) {
-        display: none !important;
+        display: block;
     }
 
     .smi .block {

@@ -168,25 +168,65 @@ $(function () {
     }
 
     var $carousel2 = $('.comand .inner');
+    if(isMobile.any){
+        if($('.comand .inner .member').length==4){
+//            $('.comand .member:nth-child(2)').css('display','block');
+            var cntMemCur=0;
+            $('.comand .inner .member').css('position', 'relative');
+            $('.comand .inner .member:not(:first)').css('left','500px');
+            console.log($($('.comand .inner .member')[cntMemCur]).attr('class'));
+            var cntMem=$('.comand .inner .member').length-1;
 
-    $carousel2.carouFredSel({
-        items: 4,
-        circular: true,
-        responsive: true,
-        swipe: {
-            onMouse: true,
-            onTouch: true
-        },
-        scroll: {
-            items: 1
-        },
-        auto: {
-            play: true,
-            timeoutDuration: 5000
-        },
+            setInterval(function() {
+                $($('.comand .inner .member')[cntMemCur]).animate(
+                    {"left": "-=500px"},
+                    "slow",
+                    function(){
+                        $(this).css('display','none');
+                        $(this).css('left','500px');
+                        if(cntMemCur==cntMem){
+                            cntMemCur=0;
+                        }else{
+                            cntMemCur++;
+                        }
+                        $($('.comand .inner .member')[cntMemCur]).css('display','block');
+                        $($('.comand .inner .member')[cntMemCur]).animate(
+                            {"left": "0"},
+                            "slow"
+                        );
+                    }
+                );
 
-        onCreate: onCreate2
-    });
+
+
+            }, 5000);
+        }
+
+
+    }
+
+
+//    if(!isMobile.any){
+//        $carousel2.carouFredSel({
+//            items: 4,
+//            circular: true,
+//            responsive: true,
+//            swipe: {
+//                onMouse: true,
+//                onTouch: true
+//            },
+//            scroll: {
+//                items: 1
+//            },
+//            auto: {
+//                play: true,
+//                timeoutDuration: 5000
+//            },
+//
+//            onCreate: onCreate2
+//        });
+//    }
+
 
     function onCreate2() {
         $(window).on('resize', onResize2).trigger('resize');

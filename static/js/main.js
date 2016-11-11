@@ -26,7 +26,7 @@ $(function () {
         }
     });
 
-    $('.slider2 ul').carouFredSel({
+    $('.slider2:visible ul').carouFredSel({
         items: 1,
         circular: true,
         responsive: true,

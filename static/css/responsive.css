@@ -167,6 +167,10 @@
 
 }
 
+.slider2:nth-of-type(2) {
+    display: none;
+}
+
 @media (max-width: 1280px) {
     .top-menu li {
         margin-left: 35px;
@@ -181,7 +185,20 @@
     }
 }
 
+.slider2 {
+    display: none;
+}
+.slider2:nth-of-type(odd){
+    display: block;
+}
+
 @media (max-width: 1279px) {
+    .slider2:nth-of-type(odd) {
+        display: none;
+    }
+    .slider2:nth-of-type(even){
+        display: block;
+    }
     .footer .top .ins > p {
         display: none;
     }

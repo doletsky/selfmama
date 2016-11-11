@@ -189,7 +189,7 @@ if (!intval($element_exist)) BXHelper::NotFound();
     </div>
 <?}?>
 <?$comments_html = ob_get_clean();*/?>
-
+122
 <?
 if ($sections_to_template[$arParams['PARENT_SECTION_CODE']]) {
     $ElementID = $APPLICATION->IncludeComponent(

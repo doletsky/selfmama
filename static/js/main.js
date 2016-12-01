@@ -169,11 +169,13 @@ $(function () {
 
     var $carousel2 = $('.comand .inner');
     if(isMobile.any){
+
         if($('.comand .inner .member').length==4){
-//            $('.comand .member:nth-child(2)').css('display','block');
+//            $('.comand .member:not:first').css('display','none');
             var cntMemCur=0;
             $('.comand .inner .member').css('position', 'relative');
             $('.comand .inner .member:not(:first)').css('left','500px');
+            $('.comand .inner .member:not(:first)').css('display','none');
             console.log($($('.comand .inner .member')[cntMemCur]).attr('class'));
             var cntMem=$('.comand .inner .member').length-1;
 
